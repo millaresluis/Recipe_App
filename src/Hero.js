@@ -1,7 +1,6 @@
 import React from 'react';
 
-const Hero = (handleLogout) => {
-
+const Hero = ({handleLogout}) => {
 
     return (
         <section className = "hero">

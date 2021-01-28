@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import fire from './firebase';
 import Login from './Login';
 import Hero from './Hero';
+import App2 from './App2';
 import './App.css';
 
 const App = () => { 
@@ -47,7 +48,7 @@ const handleSignup = () => {
     clearErrors();
     fire 
     .auth()
-    .signInWithEmailAndPassword(email,password)
+    .createUserWithEmailAndPassword(email,password)
     .catch((err => {
       switch (err.code)  {
         case "auth/email-already-in-use":
@@ -84,7 +85,7 @@ useEffect(() => {
 return (
     <div className = "App">
       {user ? (
-        <Hero handleLogout={handleLogout} />
+        <App2 handleLogout={handleLogout} />
       ) : (
        <Login 
          email={email} 
