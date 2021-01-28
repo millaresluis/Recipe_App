@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import fire from './firebase';
 import Login from './Login';
 import Hero from './Hero';
-import App2 from './App2';
+import RecipeAPI from './RecipeAPI';
 import './App.css';
 
 const App = () => { 
@@ -85,7 +85,7 @@ useEffect(() => {
 return (
     <div className = "App">
       {user ? (
-        <App2 handleLogout={handleLogout} />
+        <RecipeAPI handleLogout={handleLogout} />
       ) : (
        <Login 
          email={email} 

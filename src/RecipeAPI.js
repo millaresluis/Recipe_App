@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App2.css";
+import "./RecipeAPI.css";
 import Axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 import Recipe from "./components/Recipe";
