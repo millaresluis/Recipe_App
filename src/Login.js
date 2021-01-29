@@ -12,7 +12,7 @@ const Login = (props) => {
                 </div>
 
                 <div class="formContent">
-                    <h1>HOME OF THE BEST RECIPES</h1>
+                    <h1>HOME OF THE BEST RECIPES!</h1>
                 </div>
                
             </div>
