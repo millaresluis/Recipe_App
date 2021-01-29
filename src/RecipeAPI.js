@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./RecipeAPI.css";
+import "./style/RecipeAPI.css";
 import Axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 import Recipe from "./components/Recipe";
@@ -19,14 +19,14 @@ function App2() {
     if (query !== "") {
       const result = await Axios.get(url);
       if (!result.data.more) {
-        return setAlert("No food with such name");
+        return setAlert("Invalid input");
       }
       console.log(result);
       setRecipes(result.data.hits);
       setQuery("");
       setAlert("");
     } else {
-      setAlert("Please fill the form");
+      setAlert("Fill it up!");
     }
   };
 
@@ -39,7 +39,7 @@ function App2() {
 
   return (
     <div className="App">
-      <h1>Food Searching App</h1>
+      <h1 className = "header">MESHI MESHI!</h1>
       <form onSubmit={onSubmit} className="search-form">
         {alert !== "" && <Alert alert={alert} />}
         <input
@@ -48,9 +48,9 @@ function App2() {
           onChange={onChange}
           value={query}
           autoComplete="off"
-          placeholder="Search Food"
+          placeholder="chicken,bbq,hotdogs,burgers..."
         />
-        <input type="submit" value="Search" />
+        <input type="submit" value="itadakimasu!!" />
       </form>
       <div className="recipes">
         {recipes !== [] &&

@@ -6,7 +6,21 @@ const Login = (props) => {
 
     return (
         <section className = "login">
+            <div class="loginContent">
+                <div class="formLogo">
+                    <img src="./img/Logo.png" alt="" className = "logo"/>
+                </div>
+
+                <div class="formContent">
+                    <h1>HOME OF THE BEST RECIPES</h1>
+                </div>
+               
+            </div>
+
             <div class="loginContainer">
+                <div class="logoContainer">
+                    <img src="./img/LogoBrown.png" alt="" className = "logoC"/>
+                </div>
                 <label>Email</label>
                 <input 
                     type="text" 
@@ -46,8 +60,6 @@ const Login = (props) => {
                     )}
                 </div>
             </div>
-
-
         </section>
     );
 };
