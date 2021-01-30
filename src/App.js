@@ -3,7 +3,7 @@ import fire from './firebase';
 import Login from './Login';
 import Hero from './Hero';
 import RecipeAPI from './RecipeAPI';
-import './App.css';
+import './style/App.css';
 
 const App = () => { 
   const [user, setUser] = useState('');
