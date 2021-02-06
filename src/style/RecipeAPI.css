@@ -9,7 +9,11 @@
   outline: none;
 }
 
-
+body {
+  background-size: auto;
+  background-size: 1400px 690px;
+  background-image: url("https://wallpapercave.com/wp/wp2023736.png?fbclid=IwAR1JAANl0kfvmvXhTzGY0zNDz8q3Esy0-rrdcROCSNLHCV_z2YELy5QtIpg");
+}
 html {
   font-size: 80%;
 }
@@ -17,9 +21,6 @@ html {
 .App {
   display: flex;
   flex-direction: column;
-  background-size: auto;
-  background-image: url("https://wallpaperbat.com/img/321436-cute-food-wallpaper-top-free-cute-food-background.jpg");
-  padding-bottom: 169px;
 }
 
 .header {
